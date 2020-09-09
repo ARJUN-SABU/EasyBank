@@ -1,0 +1,432 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+
+body{
+  font-family: "Public Sans", sans-serif;
+  overflow-x: hidden;
+  text-align:center;
+  background-color: hsl(0, 0%, 98%);;
+}
+
+
+/* navbar */
+.navbar{
+  padding:0 8%;
+
+  background-color: #fff;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+}
+
+
+.topButton{
+
+  color:#fff;
+  font-size: 13px;
+  padding: 11px 27px;
+  border-top-left-radius: 15% 50%;
+  border-top-right-radius: 15% 50%;
+  border-bottom-left-radius: 15% 50%;
+  border-bottom-right-radius: 15% 50%;
+  background-image: linear-gradient(to right, hsl(136, 65%, 51%) , 40%, hsl(192, 70%, 51%));
+  transition: .5s ease;
+  /* cursor: pointer; */
+}
+
+.topButton:hover{
+  background-position: 100%;
+  color:white;
+}
+
+.topButton{
+  background-size: 150%;
+}
+
+.nav-item{
+  padding:0 8px;
+
+}
+
+
+.menu{
+  color: hsl(233, 8%, 62%);
+  transition:color .5s;
+  transition: border-bottom .3s;
+  font-size: 15px;
+  line-height: 4;
+}
+
+.menu:hover{
+  color: #000;
+  border-bottom: 5px solid hsl(136, 65%, 51%);
+}
+
+
+
+
+
+/* hamburger to X transition */
+/* also see the <button> after navbar brand */
+/* which is used as data toggler */
+/* it should be same as it is */
+.navbar-toggler>.close {
+  display:inline;
+}
+.navbar-toggler.collapsed>.close, .navbar-toggler:not(.collapsed)>.navbar-toggler-icon {
+  display:none;
+}
+
+
+
+
+
+
+
+/* ================= title ======================================== */
+/* #title{
+  overflow-x: hidden;
+} */
+
+#title{
+
+  height: 800px;
+
+}
+
+.title-content{
+  background-color: hsl(0, 0%, 98%);
+  padding: 15% 8%;
+  text-align:left;
+}
+
+.title-content h1{
+  color: hsl(233, 26%, 24%);
+  font-size: 3.5rem;
+}
+
+.title-content p{
+  color:  hsl(233, 8%, 62%);
+  font-size : 1.2rem;
+  margin: 40px 0;
+}
+
+.image-part{
+  /* full path is given as the images folder is above in heirarchy than styles.css */
+  background-image : url("/Users/arjunsabu/Desktop/Web Development/EasyBank/images/bg-intro-desktop.svg");
+  background-position: 13% 19%;
+  background-color: hsl(0, 0%, 98%);
+  overflow-x: hidden;
+}
+
+.title-image{
+  position: relative;
+  left:80px;
+  z-index:1;
+}
+
+
+
+
+/* ====================features============================================ */
+.features{
+  background-color: hsl(220, 16%, 96%);
+  position:relative;
+  bottom:100px;
+  z-index: 0;
+  padding: 7% 8%;
+  text-align:left;
+}
+
+
+.feature-Top{
+  margin-bottom:80px;
+  padding-right: 29%;
+}
+
+.features p{
+  font-size: 1.2rem;
+  color: hsl(233, 8%, 62%);
+  padding-top:2%;
+}
+
+.features h1,h3{
+  color:hsl(233, 26%, 24%);
+  font-weight: 300;
+}
+
+
+.feature-menu h3{
+  margin-top: 14%;
+  margin-bottom: 8%;
+}
+
+
+
+
+/* -- =============================N E W S=======================================  */
+
+#news{
+  background-color: hsl(0, 0%, 98%);
+  padding: 7% 10% 0;
+  text-align:left;
+  position:relative;
+  bottom: 100px;
+  margin-bottom:0;
+}
+
+.cardWrapper{
+  margin-top:30px;
+}
+
+#news .card{
+  padding: 0;
+  margin:0 1%;
+}
+
+#news img{
+  height: 12rem;
+}
+
+#news h1{
+  color: hsl(233, 26%, 24%);
+}
+
+#news h6{
+  font-size: 0.7rem;
+  color: hsl(233, 8%, 62%);
+  font-weight:100;
+  padding-top:1rem;
+  padding-bottom:0.8rem;
+}
+
+#news a{
+  font-size:1.2rem;
+  line-height: 1;
+  color: hsl(0, 0%, 30%);
+  transition: 0.2s ease;
+
+}
+
+#news a:hover{
+  color: hsl(163, 50%, 49%);
+}
+
+#news p{
+  font-size: 0.95rem;
+  color:hsl(233, 8%, 62%);
+  padding-top: 0.8rem;
+}
+
+
+#news .card-body{
+  padding-top: 20px;
+}
+
+
+
+
+
+/* ============================footer=======================================  */
+
+#footer{
+  background-color: hsl(233, 26%, 24%);
+  color:white;
+  margin-top:0;
+  padding: 4% 8%;
+
+}
+
+#footer img{
+  background-color:white;
+  width:10rem;
+  margin-bottom:80px;
+}
+
+#footer a{
+  display: block;
+  margin:10px 0;
+  text-decoration:none;
+  color: #fff;
+  transition: 0.2s ease-in;
+}
+
+#footer a:hover{
+  color: hsl(163, 50%, 49%);
+}
+
+#footer .icon{
+  font-size: 1.5rem;
+  padding:0 2%;
+  transition: 0.2s ease;
+}
+
+#footer .icon:hover{
+  color: hsl(163, 50%, 49%);
+}
+
+.footer-col1,.footer-col2{
+  padding-top:0;
+  text-align:left;
+}
+
+.footer-col1{
+  padding-left:90px;
+}
+
+#footer p{
+  margin-top:50px;
+  color: #a7a7a7;
+}
+
+
+/* ============================changes in mobile ======================================= */
+
+@media (max-width: 768px){
+
+  body{
+    text-align:center;
+  }
+  /* ================navbar==================== */
+  .menu{
+    line-height: 1.5;
+
+  }
+
+  .menu:hover{
+    color: #000;
+    border-bottom: 2px solid hsl(136, 65%, 51%);
+  }
+
+  .topButton{
+    display: none;
+  }
+
+  .optionList{
+    text-align: center;
+  }
+
+  .menu-item{
+    width:70px;
+    margin-left:40%;
+    margin-right:50%;
+    text-align:center;
+  }
+
+  .logo{
+    width: 160px;
+  }
+
+  .navbar{
+    padding: 4% 8%;
+  }
+
+  /* ==================title======================== */
+  #title{
+    height:100px;
+  }
+  .image-part{
+    background-image : url("/Users/arjunsabu/Desktop/Web Development/easybank-landing-page-master/images/bg-intro-mobile.svg");
+    background-size: cover;
+    background-position: 80% 10%;
+    background-repeat:no-repeat;
+    background-color: hsl(0, 0%, 98%);
+    width:100%;
+    margin-bottom:0;
+
+  }
+
+
+  .title-image{
+    width: 100vw;
+    bottom:60px;
+    left:auto;
+  }
+
+  .title-content{
+    margin-top:0;
+    padding:0 8% 8%;
+    text-align: center;
+  }
+
+  .title-content h1{
+    font-size: 2rem;
+  }
+
+  .titleButton{
+    display:inline;
+  }
+
+
+/* ====================features============================================ */
+
+
+  .features{
+    text-align: center;
+    bottom: 0;
+    padding: 20% 5%;
+  }
+
+  .feature-Top{
+    padding-right: 0;
+    margin-bottom: 0;
+  }
+
+  .feature-menu h3{
+    margin:0 ;
+  }
+
+  .feature-menu img{
+    margin-top:14%;
+    margin-bottom:8%;
+  }
+
+
+/* -- =============================N E W S=======================================  */
+
+
+  #news{
+    bottom:0;
+    padding-bottom: 16%;
+  }
+
+  #news h1{
+    font-size: 1.8rem;
+  }
+
+
+
+   /* ============================footer=======================================  */
+
+    #footer img{
+      margin-top: 40px;
+      width: 190px;
+      margin-bottom: 40px;
+    }
+
+
+    #footer
+
+     .footerButton{
+       display: inline;
+     }
+
+
+     .footer-col1,.footer-col2{
+       text-align:center;
+     }
+
+     .footer-col1{
+       padding: 5% 0 0;
+       margin-bottom:0;
+     }
+
+     .footer-col2{
+       margin-top:0;
+       padding: 0 0 5%;
+     }
+
+}
